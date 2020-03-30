@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Six+Caps');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-
-/* font-family: 'Quicksand', sans-serif; */
-
 
 /* first page */
 *{
@@ -20,7 +13,7 @@
 }
   
 body {
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cookie', cursive;;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.4;
@@ -48,7 +41,7 @@ body {
     flex-basis: auto;
     justify-content: space-between;
     align-items: center;
-    max-width: 75rem;
+    max-width: 20rem;
     width: 100%;
     padding: 1rem 2rem;
     margin: 0 auto;
@@ -57,7 +50,7 @@ body {
 
 }
 .header .navbar .logo {
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: inherit;
     font-size: 2rem;
     font-weight: 700;
     line-height: inherit;
@@ -77,7 +70,7 @@ body {
     margin-left: 2rem;
 }
 .menu-item a {
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: inherit;
     font-size: 1rem;
     font-weight: 700;
     line-height: inherit;
@@ -102,12 +95,6 @@ body {
     font-size: 2.5rem;
     margin: 0;
 }
-.section h2{
-  font-family: 'Cookie', cursive;
-  margin-bottom: 10px;
-  font-size: 40px;
-  text-align: center;
-}
 
 .section h3{
     font-size: 4.5rem;
@@ -124,12 +111,12 @@ section#entertainment{
     padding: 10rem 0;
 }
 
-.container{
+#loading-container{
     max-width: 1180px;
     text-align: center;
     margin: 0 auto;
     padding: 0 3rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: initial;
     font-size: large;
 }
 
@@ -152,12 +139,14 @@ section#entertainment{
 
 
 /* loading animation */
-.container
+#loading-container
 {
   width: 100%;
   margin: 0 auto;
   padding: 2px;
-  background-color: #eaab00;
+  background-color: #eaab00; /* gold */
+  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
+  /* background-image: gold, gold, white */
   background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
 url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
   background-repeat: no-repeat;
@@ -248,7 +237,7 @@ div.gallery ul li img:hover {
 }
 
 p.attribution {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cookie', cursive;
 	color: #000;
 	clear: both;
 	text-align: center;
@@ -286,7 +275,7 @@ p.attribution a {
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     text-align: left;
-    font-size: 1.36rem;
+    font-size: 1.5rem;
     
 }
 .container1 {
@@ -308,13 +297,38 @@ p.attribution a {
 .shisha{
     color: #CBAB58;
 }
+
+@media only screen and  (max-width:600px) {
+  .shisha-text {
+    margin-left: -360px;
+    margin-top: 390px;
+    width: 400px;
+  }
+  .shisha {
+    margin-top: -80px;
+    margin-left: -250px;
+
+  }
+  .image-about-shsiha{
+    margin-left: -100px;
+  }
+  .try{
+    margin-left: -360px;
+  }
+  #href-hookah{
+    margin-left: -230px;
+  }
+}
+
+
+
 /* about us 2 */
 .about-us{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   text-align: left;
-  font-size: 1.36rem;
+  font-size: 1.5rem;
   
 }
 .container5 {
@@ -336,8 +350,36 @@ p.attribution a {
 }
 .shisha1{
   color: #CBAB58;
-  
 }
+
+
+@media only screen and  (max-width:600px) {
+  .shisha-text-2 {
+    margin-left: -40px;
+    margin-top: 390px;
+    width: 400px;
+  }
+  .shisha1 {
+    margin-top: -80px;
+    margin-left: 100px;
+
+  }
+  .about-arab{
+    margin-left: -500px;
+  }
+  .try{
+    margin-left: -360px;
+  }
+  #href-hookah{
+    margin-left: -800px;
+  }
+  .logo2{
+    width: 360px;
+  }
+}
+
+
+
 
 /* about us 3 */
 
@@ -346,7 +388,7 @@ p.attribution a {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   text-align: center;
-  font-size: 1.36rem;
+  font-size: 1.5rem;
   
 }
 .container6 {
@@ -609,7 +651,7 @@ hr {
 
 
 button, input {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Cookie', cursive;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
@@ -710,9 +752,9 @@ button, input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: black;
-  font-size: 17px;
-  font-family: 'Josefin Sans', sans-serif;
+  color: #999;
+  font-size: 26px;
+  font-family: 'Cookie', cursive;
 }
 
 .app-title:after {
@@ -723,7 +765,7 @@ button, input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: black;
+  background: #999;
 }
 
 /* .app-contact {
@@ -750,7 +792,7 @@ button, input {
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #666;
   color: #333333;
   font-size: 14px;
   text-transform: uppercase;
@@ -759,7 +801,7 @@ button, input {
 }
 
 .app-form-control::placeholder {
-  color: #333333;
+  color: #999;
 }
 
 .app-form-control:focus {
@@ -769,7 +811,7 @@ button, input {
 .app-form-button {
   background: none;
   border: none;
-  color: black;
+  color: #999;
   font-size: 14px;
   cursor: pointer;
   outline: none;
@@ -984,10 +1026,103 @@ footer .footer-bottom{
   
 
 
-.first-hr{
-  margin-top: 10px;
-  width: 110px;
-  margin-bottom: 10px;
-  float: left;
+
+/*-------Pics------*/
+
+.gallery-div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+#galary-container h1 {
+  font-size: 44px;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  color: #CBAB58;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+#galary-container .gallery {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#galary-container .gallery div {
+  width: 228px;
+  height: 100%;
+  flex: 1;
+  background-position: center center;
+  background-size: cover;
+  transition: 1.5s;
+  cursor: pointer;
+}
+#galary-container .gallery div:hover {
+  flex: 6;
+}
+
+.item-1 {
+  background-image: url("./01.jpg");
+}
+
+.item-2 {
+  background-image: url("./02.jpg");
+}
+
+.item-3 {
+  background-image: url("./03.jpg");
+}
+
+.item-4 {
+  background-image: url("./04.jpg");
+}
+
+.item-5 {
+  background-image: url("./05.png");
+}
+
+/* ----- Second ------*/
+.item-1-2 {
+  background-image: url("./food.jpg");
+}
+
+.item-2-2 {
+  background-image: url("./food2.jpg");
+}
+
+.item-3-2 {
+  background-image: url("./food3.jpg");
+}
+
+.item-4-2 {
+  background-image: url("./f4.jpg");
+}
+
+.item-5-2 {
+  background-image: url("./f5.jpg");
+}
+
+/* ----- Thirds ------*/
+.item-1-3 {
+  background-image: url("./c1.jpg");
+}
+
+.item-2-3 {
+  background-image: url("./c2.jpg");
+}
+
+.item-3-3 {
+  background-image: url("./c3.jpg");
+}
+
+.item-4-3 {
+  background-image: url("./c4.jpg");
+}
+
+.item-5-3 {
+  background-image: url("./c5.jpg");
+}
+
 
